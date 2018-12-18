@@ -1,0 +1,55 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        
+        <div data-role="page" id="finder" class="home bg1">
+         <div class="bar">
+                <a class="btn-for-slider icon-menu" href="#slidermenu"></a>
+                <img id="btHome" class="img-logo" src="img/diamond5050.png">
+                <div class="btn-top-sush"><div class="small-text text-white">Diamonds</div><div class="big-text text-blue" >Finder</div></div>
+            </div>
+         <div data-role="panel" id="slidermenu"> 
+            <br><br><br>
+            <label>User</label>
+            <h3 id="hdCabeceraUser" class="btn-diamond"><span class="icon-user"></span> Finder...</h3>    
+            <br>
+            <ul data-role="listview" >
+              <li class="orange" ><a id="liCuenta" class="lista-izq"><span class="icon-user"></span>  Account</a></li>
+              <li class="orange" ><a id="liChat" class="lista-izq"><span class="icon-diamond"></span>  Send Message </a></li>
+              <li class="purple"><a id="liCerrar" class="lista-izq"><span class="icon-exit"></span> Close </a><br></li>
+            </ul>
+          </div>
+            <div role="main" class="ui-content">
+               <label style="color: black;"  >City</label>
+                <select id="tCiudad">
+                  <option value="SI">Select City</option>
+                  <option value="MI">Miami</option>
+                  <option value="OR">Orlando</option>
+                  <option value="TA">Tampa</option>
+                  <option value="AT">Atlanta</option>
+                  <option value="LA">Los Angeles</option>
+                  <option value="SF">San Francisco</option>
+                  <option value="NY">New York</option>
+                  <option value="CH">Chicago</option>
+                  <option value="HO">Houston</option>
+                  <option value="AU">Austin</option>
+                  <option value="OT">Other</option>
+                </select> 
+               <center><button class="btn-diamond" id="btOrden"><span class="icon-heart"></span> Filter by Likes</button></center>
+                <div class="ui-content">
+                    <div style="color: black;" id="listaFinders">
+
+                    </div>
+                </div>
+            </div>
+            <div id="footer" data-role="footer" data-position="fixed" style="background-color: black;" align="center">
+                    <button class="icon-arrow-left btn-left" id="btnRestar"></button>
+                    <button class="icon-home-pic" id="btDiamond"></button>
+                    <button  class="btn-exit icon-arrow-right  btn-right" id="btnSumar"></button>
+            </div>
+        </div>
+    </body>
+
+</html>

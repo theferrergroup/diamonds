@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="jqm/jquery.mobile-min.css">
+        <link rel="stylesheet" type="text/css" href="css/panel_main.less.css" class="main-less">
+        <link rel="stylesheet" href="fonts/style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+        <script src="intelxdk.js"></script>
+        <script src="cordova.js"></script>
+        <script src="xhr.js"></script>
+        <script src="panel.js"></script>
+        <script src="xdk/init-dev.js"></script>
+        <script type="application/javascript" src="lib/jquery.min.js"></script>
+        <script type="application/javascript" src="jqm/jquery.mobile-min.js" data-ver="0"></script>
+    </head>
+    
+    <body>   
+        <div data-role="page" id="paneladmin" class="ui-background-color-body">
+           
+          <div data-role="panel" id="Menu"> 
+            <br><br>  
+            <h3 style="background-color:blue; color:yellow">Cuenta y Comunidad</h3>
+
+              <div class="ui-content">
+                  <a id="liCuenta"><b><span class="icon-user"></span>  Configuraci&oacute;n de Cuenta</b></a>
+              </div>
+              <div class="ui-content">
+                  <a id="liJunta"><span class="icon-bubbles2"></span> Mensajes a la Junta</a>
+              </div>
+              <div class="ui-content">
+                  <a id="liForo"><span class="icon-info"></span> Foro Vecinal</a>
+              </div>
+              <div class="ui-content">
+                  <a id="liBuenVecino"><span class="icon-heart"></span> Programa Buenos Vecinos</a>
+              </div>
+         </div>
+
+
+          <div role="main" class="ui-content">
+           <!-- <div>
+            </div> -->
+            <br>    
+ 
+            <div data-role="header">
+                <a href="#Menu" class="ui-btn-for-slider icon-heart"></a>
+                <img class="ui-img3" width="313" height="45" src="images/condominiologo.png">
+            </div>
+            <div data-role="header">
+                <h1 id="hdCabeceraUser"><span class="icon-hour-glass"></span> Espera un momento, wait please....</h1>
+                
+            </div>
+            <div class="ui-content">
+                <ul id="menu" data-role="listview" class="ui-for-list" >
+                  <li><a id="liMensajes"><span class="icon-envelop"></span>  Solicitud de SMS Masivo</a><br></li>
+                  <li><a id="liPropietarios"><span class="icon-users"></span> Lista de Propietarios</a><br></li>
+                  <li><a id="liBancos"><span class="icon-office"></span> Cuentas Bancarias</a><br></li>
+                  <li><a id="liPagos"><span class="icon-credit-card"></span> Ingresos y Cuentas x Cobrar</a><br></li>
+                  <li><a id="liProveedores"><span class="icon-cogs"></span> Gastos y Proveedores</a><br></li>
+                  <li><a id="liReservas"><span class="icon-map"></span> Gestion de Areas Comunes</a><br></li>
+                  <li><a id="liCerrar"><span class="icon-lock"></span>Cerrar Sesi&oacute;n</a></li>
+                </ul>
+            </div>
+         </div>
+       </div>
+    </body>
+
+</html>
